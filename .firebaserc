@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "ignition-hacks",
+    "staging": "ignition-hacks"
+  },
+  "targets": {}
+}
