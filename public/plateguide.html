@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nutrimenta</title>
+    
+
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/8.10.0/firebase-app.js"></script>
@@ -16,17 +18,14 @@
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
+        
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
   </head>
   <body>
-    <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+<!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#" style="color: #F3E9E3;">Nutrimenta</a>
         <button
@@ -58,59 +57,30 @@
         </div>
       </div>
     </nav>
-
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <h1>My Foods</h1>
-        <div>
-        <label for="searchInput" class="form-label">Search</label>
-        <input
-          type="text"
-          id="searchInput"
-          class="form-control"
-          placeholder="search"
-        />
-        <p>
-          <button
-            class="btn"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseExample"
-            aria-expanded="false"
-            aria-controls="collapseExample"
-            id="searchbtn"
-          >
-            Enter
-          </button>
-        </p>
+    
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column text-center">
+<main class="px-3">
+    <h1>Your Plate Guide</h1>
+      <div id="chart">
       </div>
 
-      <div class="collapse" id="collapseExample">
-<!--Search results-->
-        <div class="card card-body">
-          <figure class="figure">
-            <img src="" class="figure-img rounded float-left" alt="..." id="foodphoto"/> 
-            <p class="figure-caption text-end" id="foodname">Food Not Found</p> 
-          </figure>
-          <div id="query-app">
-
-          </div>
-          <button class="btn btn-lg btn-secondary fw-bold" style="background-color: #F3E9E3; color: #E3AD57; border: none; border-radius: 33px;">
-            <a id="foodlink" href="">See More Nutrition Facts</a></button>
-        </div>
-        <!-- <div class="card card-body"></div> -->
-      </div>
-      <!-- Footer -->
-      <footer class="mt-auto text-white-50">
-        <p>Powered by: NutritionixAPI</p>
-      </footer>
-    </div>
-
+      
+    <p class="lead" style="color: #22341F; font-weight: bold; font-style: italic;">text</p>
+    </main>
+    <!-- Footer -->
+    <footer class="mt-auto text-white-50">
+    <p></p>
+    </footer>
+  </div>
+    
     <!-- Option 1: Bootstrap Bundle with Popper-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
-    <script src="js/searchResults.js"></script>
+        <!-- ApexCharts Javascript Library -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/plateguide.js"></script>
   </body>
 </html>
