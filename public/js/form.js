@@ -26,7 +26,7 @@ const readfromDB = (userId) => {
   const tagsRef = firebase.database().ref(`users/${googleUserId.uid}/profile/tags`);
   tagsRef.on('value', (snapshot) => {
     const data = snapshot.val();
-    console.log(data)
+    // console.log(data)
     renderDataAsHtml(data);
   });
 };
