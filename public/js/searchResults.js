@@ -39,5 +39,6 @@ const APICall = query => {
     let foodName = document.querySelector("#foodname");
     foodPhoto.src = foodItem.photo.thumb;
     foodName.innerHTML = ( foodItem.tags.quantity + " serving of " + foodItem.tags.item);
+    
   });
 };
